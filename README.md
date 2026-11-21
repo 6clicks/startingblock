@@ -33,13 +33,14 @@ functions.php      Chargement de style.css (front + éditeur)
 templates/         Modèles : index, page, single, archive, search, 404, page-no-title
 parts/             Parties de modèle : header, footer
 patterns/          Compositions (exemple : hero.php)
-AGENTS.md          Instructions pour les agents de code (Cline, etc.)
+AGENTS.md          Instructions pour les agents de code (Cline, Codex, etc.)
+CLAUDE.md          Renvoie vers AGENTS.md pour Claude Code
 screenshot.png     Aperçu dans Apparence → Thèmes
 ```
 
 ## Travailler avec un agent de code
 
-`AGENTS.md` décrit les conventions du thème : CSS dans `style.css`, variables de `theme.json`, échappement des sorties, blocs en PHP seul. Les agents comme Cline le lisent automatiquement quand le dossier du thème est ouvert dans VS Code. Adaptez-le au projet.
+`AGENTS.md` décrit les conventions du thème : séparation thème / plugin, CSS dans `style.css`, variables de `theme.json`, préfixes, traduction, échappement des sorties, blocs en PHP seul. Les agents comme Cline le lisent automatiquement. Claude Code lit `CLAUDE.md`, qui importe `AGENTS.md` : les règles sont écrites une seule fois. Adaptez-les au projet.
 
 ## Personnaliser
 
