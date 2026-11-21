@@ -38,5 +38,7 @@ Ne jamais retirer ou contourner un échappement pour faire fonctionner une deman
 - Ne pas modifier `templates/`, `parts/` ni `theme.json` sans demande explicite : ils reflètent le travail fait dans l'éditeur.
 - Après chaque modification d'un fichier PHP, vérifier la syntaxe avec `php -l <fichier>`.
 - L'agent ne voit pas le rendu : terminer en indiquant quoi vérifier dans le navigateur (page, bloc, réglage).
-- Ne pas faire de commit, de push ni d'annulation Git sans qu'on le demande : l'utilisateur gère l'historique.
+- Git : ne jamais faire de commit, de push ni d'annulation sans accord.
+  - Avant une modification, si `git status` montre des changements non commités, le signaler et proposer un commit pour partir d'un état propre.
+  - Après une modification terminée et vérifiée, proposer un commit avec un message court en français (« Ajoute le bloc carte-equipe »). Attendre la réponse avant de le lancer.
 - Répondre en français : expliquer brièvement ce qui a été modifié et pourquoi.
