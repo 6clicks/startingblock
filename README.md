@@ -56,3 +56,5 @@ Les modifications faites dans l'éditeur de site sont enregistrées en base. Pou
 ## Licence
 
 GPL v2 ou ultérieure.
+
+Photo de `screenshot.png` : [piste d'athlétisme](https://www.rawpixel.com/image/5905245/photo-image-public-domain-blue-line), rawpixel, domaine public (CC0).
