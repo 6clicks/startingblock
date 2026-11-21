@@ -26,7 +26,7 @@ Le thème gère l'apparence : styles, modèles, patterns, styles de bloc. Ce qui
 - **Préfixe** : le slug du thème (`Text Domain` de `style.css`) préfixe les slugs de patterns (`startingblock/hero`), les noms de blocs (`startingblock/…`), les styles de bloc et les handles de scripts ou styles.
 - **Traduction** : tout texte affiché passe par `__()`, `esc_html__()`, `esc_html_e()` ou `esc_attr__()` avec le text domain du thème, comme dans `patterns/hero.php`.
 - **Styles de bloc** : `register_block_style()` sur `init` dans `functions.php`, CSS dans `style.css`.
-- **Blocs** : par défaut, blocs en PHP seul (WordPress 7.0) : `register_block_type()` avec `supports.autoRegister` et un `render_callback`, un fichier par bloc dans `blocks/`, chargé depuis `functions.php`. Pas de `block.json`, pas de JavaScript. Ne pas nommer un attribut `style`, `className`, `backgroundColor` ou `textColor`. Documentation : https://make.wordpress.org/core/2026/03/03/php-only-block-registration/
+- **Blocs** : un bloc inséré dans le contenu (pages, articles) ne va pas dans le thème : le signaler, il va dans le plugin de blocs (`startingblock-blocks`). Le thème ne contient que des blocs de présentation utilisés dans `templates/` ou `parts/`, en PHP seul (WordPress 7.0) : `register_block_type()` avec `supports.autoRegister` et un `render_callback`, un fichier par bloc dans `blocks/`, chargé depuis `functions.php`. Pas de `block.json`, pas de JavaScript. Ne pas nommer un attribut `style`, `className`, `backgroundColor` ou `textColor`. Documentation : https://make.wordpress.org/core/2026/03/03/php-only-block-registration/
 
 ## Sécurité
 
